@@ -40,7 +40,7 @@ async function run(): Promise<void> {
     }
     core.debug(`Resolved path is ${resolvedPath}`)
     const s3 = new AWS.S3({region: region})
-    const s3Prefix = `pytorch/pytorch/3569166042/${name}/`
+    const s3Prefix = `pytorch/pytorch/3569166042/linux-bionic-cuda11.6-py3.10-gcc7-sm86/`
     const s3Params = {
       Bucket: s3Bucket,
       Prefix: s3Prefix
